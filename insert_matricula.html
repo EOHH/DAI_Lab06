@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crear nueva matrícula</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      width: 50%;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+	<h1>Insertar matrícula</h1>
+	<form method="POST" action="insert_matricula.php">
+		<label>ID del curso:</label>
+		<input type="number" name="id_curso" required><br><br>
+		<label>ID del alumno:</label>
+		<input type="number" name="id_alumno" required><br><br>
+		<label>Fecha de inscripción:</label>
+		<input type="date" name="fecha_inscripcion" required><br><br>
+		<button type="submit">Agregar matricula</button>
+	</form>
+</body>
+</html>

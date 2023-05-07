@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eliminar curso</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		.container {
+			background-color: #ffffff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+			padding: 30px;
+			margin: auto;
+			max-width: 500px;
+		}
+		form {
+			margin-top: 20px;
+		}
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #ffffff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		input[type="text"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+		.error {
+			color: red;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.success {
+			color: green;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Eliminar curso</h1>
+	<div class="container">
+		<form action="delete_curso.php" method="GET">
+			<label for="id_curso">ID del curso:</label>
+			<input type="text" id="id_curso" name="id_curso" placeholder="Ingrese el ID del curso a eliminar">
+			<input type="submit" value="Eliminar">
+		</form>
+	</div>
+</body>
+</html>

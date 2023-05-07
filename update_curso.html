@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actualizar curso</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="date"] {
+            width: 100%;
+        }
+
+        form button[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        form button[type="submit"]:hover {
+            cursor: pointer;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Actualizar curso</h1>
+    <form method="post" action="update_curso.php">
+        <label for="id_curso">ID del curso:</label>
+        <input type="text" name="id_curso" id="id_curso" required>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="descripcion">Descripción:</label>
+        <input type="text" name="descripcion" id="descripcion" required>
+
+        <label for="fecha_inicio">Fecha de inicio:</label>
+        <input type="date" name="fecha_inicio" id="fecha_inicio" required>
+
+        <label for="fecha_fin">Fecha de fin:</label>
+        <input type="date" name="fecha_fin" id="fecha_fin" required>
+
+        <button type="submit" name="submit" class="submit-button">Actualizar</button>
+    </form>
+</body>
+</html>
+
+
